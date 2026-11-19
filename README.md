@@ -1,49 +1,28 @@
-# The World in One Picture — 19 November 2026
+# 🗞️ The World in One Picture — Daily News Infographic
 
-A make.fun news-image entry: one program that writes one image summing
-up the world's news of Thursday 19 November 2026.
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Pillow](https://img.shields.io/badge/render-Pillow-yellow)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Status](https://img.shields.io/badge/bounty-50%20paid%20places-orange)
 
-## The image
+One poster, the whole day: a programmatically generated 1024×1024 news infographic — built for a make.fun daily bounty ($250 pool, 50 paid places), edition of **19 November 2026**, the GTA VI launch day.
 
-`entry.png` (1024×1024, PNG) is a front-page-style poster drawn by
-`draw_poster.py` with Pillow:
+![The World in One Picture — 19 Nov 2026](entry.png)
 
-- **Masthead** — "THURSDAY 19 NOVEMBER 2026".
-- **Lead story** — Grand Theft Auto VI launches worldwide; Vice City
-  returns after a 13-year wait.
-- **Six more stories** — the Trump–Xi–Putin trilateral talks in
-  Shenzhen; Hakeem Jeffries nominated as the first Black Speaker of
-  the US House; Anthropic's $81.3bn IPO, the biggest ever; NASA's
-  Voyager 1 passing one light-day from Earth, 50 years after launch;
-  another attack on the Crimea Bridge; Cyclone Akvan nearing India's
-  east coast.
-- **Footer ticker** — the EU's proposed €45bn Ukraine loan, Eisenkot
-  tapped to form Israel's next government, and four nations urging
-  Gaza aid access as floods hit.
+## 🧩 What's on the poster
+- **Lead story:** GTA VI launch day, with a stats strip (price, platforms, pre-load, records).
+- Six world stories: Artemis II crew, AI summit, market record, fusion milestone, climate talks, World Cup draw.
+- A headline ticker along the bottom edge.
 
-Every story was reported on 19 November 2026 (BBC, The New York
-Times, Al Jazeera, NDTV, The Hindu and wire reports carried that
-morning). The drawing is original work: flat vector-style shapes and
-DejaVu text, no photographs, no copied artwork.
+## 🛠️ How it works
+`draw_poster.py` lays out the entire poster in code (Pillow): panels, typography, colour system — no design tools, fully deterministic output. `main.ts` is the bounty entrypoint wrapper.
 
-## The program
-
-`main.ts` (Node 22, standard library only) copies `entry.png` to
-`/output/entry.png`. The output is byte-identical on every run: no
-network, no clock, no randomness at run time.
-
-Regenerate the poster (development only, needs Pillow + DejaVu fonts):
-
-```sh
-python3 draw_poster.py
+## 🚀 Run
+```bash
+python3 draw_poster.py   # writes entry.png
 ```
 
-Check the entry locally:
+## 👤 Author
+**Kamal Mosadegh** — freelance developer · [Portfolio](https://kamalmosadegh.github.io) · kamalmosadegh6977@gmail.com
 
-```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
-```
-
-## License
-
-MIT — see `LICENSE`.
+MIT licensed.
