@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Draw the news-image entry for 19 November 2026.
+"""Draw the daily news poster for 19 November 2026.
 
 One 1024x1024 poster: a masthead naming the day, a lead panel on the
 day's biggest story (GTA VI launches), six story panels across regions
@@ -7,7 +7,7 @@ and fields, and a footer ticker with three more stories. All shapes and
 text are drawn with Pillow; the output is deterministic (fixed seed,
 no timestamps, no network), so running it twice writes identical bytes.
 
-Run:  python3 draw_poster.py        # writes entry.png next to this file
+Run:  python3 draw_poster.py        # writes poster.png next to this file
 """
 import math
 import random
@@ -328,8 +328,8 @@ def main():
     draw.text((24, 984 + (40 - size) // 2 - 2), ticker, font=REG(size),
               fill=(220, 228, 240))
 
-    img.save("entry.png", optimize=True)
-    print("wrote entry.png", img.size)
+    img.save("poster.png", optimize=True)
+    print("wrote poster.png", img.size)
 
 
 if __name__ == "__main__":
