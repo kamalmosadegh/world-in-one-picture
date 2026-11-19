@@ -3,9 +3,9 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![Pillow](https://img.shields.io/badge/render-Pillow-yellow)
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Status](https://img.shields.io/badge/bounty-50%20paid%20places-orange)
+![Status](https://img.shields.io/badge/status-completed-brightgreen)
 
-One poster, the whole day: a programmatically generated 1024×1024 news infographic — built for a make.fun daily bounty ($250 pool, 50 paid places), edition of **19 November 2026**, the GTA VI launch day.
+One poster, the whole day: a programmatically generated 1024×1024 news infographic — a daily-edition generator — this is the edition of **19 November 2026**, the GTA VI launch day.
 
 ![The World in One Picture — 19 Nov 2026](entry.png)
 
@@ -15,7 +15,7 @@ One poster, the whole day: a programmatically generated 1024×1024 news infograp
 - A headline ticker along the bottom edge.
 
 ## 🛠️ How it works
-`draw_poster.py` lays out the entire poster in code (Pillow): panels, typography, colour system — no design tools, fully deterministic output. `main.ts` is the bounty entrypoint wrapper.
+`draw_poster.py` lays out the entire poster in code (Pillow): panels, typography, colour system — no design tools, fully deterministic output. `main.ts` is the entrypoint wrapper.
 
 ## 🚀 Run
 ```bash
