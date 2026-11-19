@@ -7,7 +7,7 @@
 
 One poster, the whole day: a programmatically generated 1024×1024 news infographic — a daily-edition generator — this is the edition of **19 November 2026**, the GTA VI launch day.
 
-![The World in One Picture — 19 Nov 2026](entry.png)
+![The World in One Picture — 19 Nov 2026](poster.png)
 
 ## 🧩 What's on the poster
 - **Lead story:** GTA VI launch day, with a stats strip (price, platforms, pre-load, records).
@@ -19,7 +19,7 @@ One poster, the whole day: a programmatically generated 1024×1024 news infograp
 
 ## 🚀 Run
 ```bash
-python3 draw_poster.py   # writes entry.png
+python3 draw_poster.py   # writes poster.png
 ```
 
 ## 👤 Author
